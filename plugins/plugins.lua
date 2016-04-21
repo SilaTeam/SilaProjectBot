@@ -54,7 +54,7 @@ do
   end
 
   local function run(msg, matches)
-    if is_mod(msg.from.id, msg.to.id) then
+    if is_momod(msg.from.id, msg.to.id) then
       -- Show the available plugins
       if matches[1] == '/plugins' then
         return list_plugins()
