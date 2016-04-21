@@ -1,7 +1,7 @@
 do
 
 local function callback(extra, success, result)
-	vardump(success)
+  vardump(success, result)
 end
 
 local function is_spromoted(chat_id, user_id)
@@ -76,8 +76,8 @@ local function check_member(cb_extra, success, result)
             blocked_words = {},
           }
           save_data(_config.moderation.data, data)
-				  local hash =  'sprom:'..msg.to.id..':'..user_id
-	        redis:set(hash, true)
+          local hash =  'sprom:'..msg.to.id..':'..user_id
+          redis:set(hash, true)
           return send_large_msg(receiver, 'You have been promoted as moderator for this group.')
       end
     end
@@ -165,8 +165,8 @@ local function upmanager(receiver, username, user_id)
 end
 
 local function inmanager(receiver, username, user_id)
-  channel_set_unadmin(receiver, 'user#id'..user_id, callback, false)
-  return send_large_msg(receiver, 'Done!')
+  --channel_set_admin(receiver, 'user#id'..user_id, callback, false)
+  return send_large_msg(receiver, 'This feature is under development')
 end
 
 local function admin_promote(receiver, username, user_id)  
