@@ -1,40 +1,34 @@
-~~This is Simple README 
-
-~~ Source Superflux For Supergroups 
-
-+~~Developer By : @Mustafaflux On Telegram ,
 
 To install on C9 your next steps
 
 
 
 #Step1 : writ this > in Terminal 
-
+```
 sudo apt-get update 
+```
 
 
-
-#step2 : writ this > in Terminal 
+#step2 : write this > in Terminal 
 
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ 
 libjansson-dev libpython-dev expat libexpat1-dev
 
 
 
-#step3 : writ >
+#step3 : write >
 
-git clone https://github.com/mustafaflux/superflux-bot.git
-
-
-#step4 : Writ >
-
-cd superflux-bot
+git clone https://github.com/SilaTeam/SilaProjectBot
 
 
+#step4 : Write >
 
-step5 : Writ >
+cd SilaProjectBot
 
-./launch.sh install 
+
+step5 : Write >
+
+./silabot install 
 
 
 
@@ -42,9 +36,9 @@ step5 : Writ >
 
 
 
-step6 : Writ >
+step6 : Write >
 
-./launch.sh 
+./silabot
 
 
 
