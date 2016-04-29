@@ -1,8 +1,5 @@
 #!/bin/bash
 
-	echo "
-"
-else
 	echo "SILA Team"
         sudo apt-get update
         sudo apt-get upgrade
