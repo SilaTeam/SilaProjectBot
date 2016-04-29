@@ -1,8 +1,5 @@
 #!/bin/bash
 
-read -p "Do you want me to install libreadline? (yes/no):"
-
-if [ "$REPLY" != "yes" ]; then
 	echo "
 "
 else
